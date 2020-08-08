@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <title>MyFilmList</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-film text-info"></i> My<span class="text-info">Film</span>List</h1>
+        <form id="film-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title"
+                class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="release-date">Release Date</label>
+                <input type="text" id="release-date"
+                class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="type-movie">Type of movie</label>
+                <input type="text" id="type-movie"
+                class="form-control">
+            </div>
+            <input type="submit" value="Add Film" class="btn btn-primary btn-block">
+        </form>
+
+        <hr>
+        <div class="form-group mt-3">
+            <input class="form-control" type="text" id="filmSearchInput" placeholder="Search your Film List..." title="Type in a film Name">
+        </div>
+        
+        <table id="film-list-table" class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Release Date</th>
+                    <th>Type of movie</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="film-list">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
